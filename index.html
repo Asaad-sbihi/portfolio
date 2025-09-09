@@ -1,0 +1,144 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>My portfolio</title>
+ </head>
+ <body>
+    <header>
+        <!--header-->
+  <nav class="nav-center" style="position: relative;">
+    <ul class="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Night mode toggle button -->
+  
+  </nav>
+   <button id="night-mode-toggle" aria-label="Toggle night mode">
+      <i class="fas fa-moon"></i>
+    </button>
+</header>
+ 
+ <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+        <img src="me.jpeg" alt="Photo de Asaad" class="profile-pic">
+      <h1 class="myname">Asaad Sbihi</h1>
+      <p class="dif">Développeur Full Stack</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+ <section id="about" class="about-section">
+  <h2>About Me</h2>
+  <p>Je suis un développeur full stack passionné<br> avec une expérience dans la création d'applications web utilisant des technologies modernes...</p>
+  <div class="btn-group">
+    <a href="https://www.linkedin.com/in/asaad-sbihi-610903366/"  
+    target="_blank" rel="noopener noreferrer" class="btn linkedin">LinkedIn</a>
+    <a href="https://github.com/Asaad-sbihi" rel="noopener noreferrer" target="_blank" class="btn github">GitHub</a>
+    <a href="Blue and Gray Simple Professional CV Resume (2).pdf" rel="noopener noreferrer" target="_blank" class="btn cv">Télécharger CV</a>
+  </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="logo java script.webp" alt="Javascript" />
+      <p>JavaScript</p>
+    </div>
+    <div class="skill-card">
+      <img src="react.png" alt="React" />
+      <p>React</p>
+    </div>
+    <div class="skill-card">
+      <img src="python.png" alt="Python" />
+      <p>Python</p>
+    </div>
+    <div class="skill-card">
+      <img src="html css.png" alt="HTML5&Css" />
+      <p>HTM&Css</p>
+    </div>
+  </div>
+</section>
+<!--Section projet ! -->
+<section id="projects" class="projects-section">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="jobportal.png" alt="Job Portal">
+      <p>JobPortal est une plateforme pour postuler à des emplois... avec JavaScript.</p>
+    </div>
+    <div class="project-card">
+      <img src="eventmanager.png" alt="Event Manager">
+      <p>EventManager est une plateforme de réservation de billets... créée avec PHP.</p>
+    </div>
+    <div class="project-card">
+      <img src="clientmanager.png" alt="Client Manager">
+      <p>Un projet de restauration  avec python</p>
+    </div>
+    <div class="project-card">
+      <img src="weatherapp.png" alt="Weather App">
+      <p>Mini application météo avec JavaScript et OpenWeatherMap.</p>
+    </div>
+  </div>
+</section>
+<!--Section Contact ! -->
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <h2>Contactez-moi</h2>
+    <form action="https://formspree.io/f/mandvela" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</section>
+
+<!--footer ! -->
+<footer class="footer">
+  <div class="footer-container">
+    <h2>Asaad Sbihi</h2>
+    <p>Développeur Full Stack passionné par le code et les solutions web modernes.</p>
+
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/asaad-sbihi-610903366/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Asaad-sbihi" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:asaadsbihi737@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <p class="footer-rights">© 2025 Asaad Sbihi – Tous droits réservés</p>
+  </div>
+
+ </footer>
+
+<!-- Night mode script -->
+<script>
+  const toggleBtn = document.getElementById('night-mode-toggle');
+  const icon = toggleBtn.querySelector('i');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('night-mode');
+    if(document.body.classList.contains('night-mode')) {
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+    } else {
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+    }
+  });
+</script>
+
+ </body>
+
+
+
+
+
