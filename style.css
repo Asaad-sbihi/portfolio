@@ -60,7 +60,7 @@ header {
   align-items: center;          /* centré horizontalement */
   justify-content: center;      /* centré verticalement */
   text-align: center;
-  background: url(bg2.jpg) no-repeat center center fixed;
+  background: url(sl_031420_28950_10.jpg) no-repeat center center fixed;
   background-size: cover;       /* image de fond adaptée */
 }
 
@@ -419,8 +419,3 @@ body.night-mode .nav-menu li a {
 body.night-mode .nav-menu li a:hover {
   color: #ffd700 !important;
 }
-
-
-
-
-
