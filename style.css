@@ -419,3 +419,112 @@ body.night-mode .nav-menu li a {
 body.night-mode .nav-menu li a:hover {
   color: #ffd700 !important;
 }
+body.night-mode button,
+body.night-mode .btn {
+  background: #222 !important;
+  color: #ffd700 !important;
+  border: 1px solid #444 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  transition: background 0.3s, color 0.3s;
+}
+body.night-mode button:hover,
+body.night-mode .btn:hover {
+  background: #333 !important;
+  color: #fff700 !important;
+  border-color: #ffd700 !important;
+}
+/* ==========================
+   Styles optimisés pour mobile
+   ========================== */
+@media (max-width: 900px) {
+  section {
+    padding: 40px 10px !important;
+  }
+  .about-section,
+  .skills-section,
+  .projects-section,
+  .contact {
+    padding: 40px 10px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Réinitialisation */
+  body {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* ====== NAV ====== */
+  header {
+    top: 10px;
+  }
+
+  .nav-center {
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;           /* liens passent en 2 lignes si besoin */
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-menu li a {
+    font-size: 14px;
+    padding: 4px 6px;
+  }
+
+  /* ====== HERO ====== */
+  .hero {
+    height: auto;              /* s’adapte au contenu */
+    padding: 40px 10px 20px 10px;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+    margin: 10px 0 5px 0;
+  }
+
+  .dif {
+    font-size: 14px;
+    width: fit-content;
+    margin: 8px auto;
+    border-right: 2px solid white;
+    white-space: nowrap;
+  }
+
+  #night-mode-toggle {
+    display: none !important;
+  }
+
+
+  .about-section .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+  .about-section .btn {
+    width: 90%;
+    font-size: 1rem;
+    padding: 12px 0;
+    margin: 0;
+    border-radius: 10px;
+  }
+} 
+
+
